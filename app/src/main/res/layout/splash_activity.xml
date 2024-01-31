@@ -7,7 +7,7 @@
     tools:context=".SpalshActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/iv_logo_splash_screen"
         android:layout_width="197dp"
         android:layout_height="208dp"
         android:src="@drawable/ic_icon_logo"
