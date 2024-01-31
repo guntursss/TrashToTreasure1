@@ -1,5 +1,6 @@
 package com.KotlinKrew.trashtotreasure
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -16,6 +17,29 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun animateZoomOut() {
-        TODO("Not yet implemented")
+        splashImage.animate()
+            .scaleX(0.4f)
+            .scaleY(0.4f)
+            .setDuration(1000)
+            .withEndAction{
+                animateZoomIn()
+            }
+            .start()
+    }
+
+    private fun animateZoomIn() {
+        splashImage.animate()
+            .scaleX(0.4f)
+            .scaleY(0.4f)
+            .setDuration(1000)
+            .withEndAction{
+                startNewActivity()
+            }
+            .start()
+    }
+
+    private fun startNewActivity() {
+        startActivity(Intent(this, MainActivity::class.java ))
+        finish()
     }
 }
