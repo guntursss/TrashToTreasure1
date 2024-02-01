@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">TrashToTreasure</string>
     <string name="welcome">Welcome</string>
+    <string name="text_enter_name">Masukin Nama Kamu</string>
     <string name="judul">Tukarkan sampahmu untuk uang sekarang!</string>
     <string name="deskripsi">Aplikasi TrashToTreasure adalah solusi untuk sampah anda, tukarkan ke uang sekarang.</string>
 </resources>

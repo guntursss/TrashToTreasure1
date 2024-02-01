@@ -121,7 +121,7 @@
             android:fontFamily="@font/poppins_regular"
             android:lines="3"
             android:text="@string/deskripsi"
-            android:textSize="12dp" />
+            android:textSize="12sp" />
 
     </androidx.cardview.widget.CardView>
     
@@ -159,9 +159,9 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/tv_truk"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:text="Jemput Sampah"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:fontFamily="@font/poppins_regular"
             android:layout_marginStart="8dp"
             android:layout_marginTop="90dp"/>
@@ -190,9 +190,9 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/tv_jenis"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:text="Jenis Sampah"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:fontFamily="@font/poppins_regular"
             android:layout_marginStart="17dp"
             android:layout_marginTop="90dp"/>
@@ -221,9 +221,9 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/tv_riwayat"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:text="Riwayat &amp; Saldo"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:fontFamily="@font/poppins_regular"
             android:layout_marginStart="110dp"
             android:layout_marginTop="90dp"/>
