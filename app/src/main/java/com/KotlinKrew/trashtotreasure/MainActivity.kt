@@ -9,15 +9,13 @@ import android.widget.EditText
 import android.widget.Toast
 var textInput: EditText = TODO()
 
-public class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     private lateinit var TombolPindah: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setContentView(R.layout.activity_home)
         TombolPindah = findViewById(R.id.btn_login)
         textInput = findViewById(R.id.et_input_text)
-        TombolPindah.setOnClickListener {
             TombolPindah.setOnClickListener {
                 if (TextUtils.isEmpty(textInput.text)) {
                     Toast.makeText(this, "Nama tidak boleh kosong", Toast.LENGTH_LONG).show()
@@ -26,6 +24,5 @@ public class MainActivity : AppCompatActivity() {
                     startActivity(pindah)
                 }
             }
-        }
     }
 }
