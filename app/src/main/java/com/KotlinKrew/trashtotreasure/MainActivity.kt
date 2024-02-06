@@ -9,11 +9,12 @@ import android.widget.EditText
 import android.widget.Toast
 var textInput: EditText = TODO()
 
-class MainActivity : AppCompatActivity() {
+public class MainActivity : AppCompatActivity() {
     private lateinit var TombolPindah: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home)
         TombolPindah = findViewById(R.id.btn_login)
         textInput = findViewById(R.id.et_input_text)
             TombolPindah.setOnClickListener {
@@ -24,5 +25,5 @@ class MainActivity : AppCompatActivity() {
                     startActivity(pindah)
                 }
             }
+        }
     }
-}
