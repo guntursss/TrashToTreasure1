@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id ("kotlin-kapt")
+    id("com.google.devtools.ksp")
     id("kotlin-android")
 }
 
@@ -40,11 +40,12 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
 }
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("com.google.android.gms:play-services-maps:18.2.0")
@@ -55,9 +56,10 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     // Lifecycle components
-    implementation ("androidx.lifecycle:lifecycle-livedata:2.3.1")
-    implementation ("androidx.lifecycle:lifecycle-viewmodel:2.3.1")
+    implementation ("androidx.lifecycle:lifecycle-livedata:2.7.0")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel:2.7.0")
     implementation ("android.arch.lifecycle:extensions:1.1.1")
+    //noinspection LifecycleAnnotationProcessorWithJava8
     annotationProcessor ("android.arch.lifecycle:compiler:1.1.1")
 
 
@@ -67,9 +69,9 @@ dependencies {
     implementation ("com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0")
 
     // Room Database
-    implementation ("androidx.room:room-rxjava3:2.3.0")
-    implementation ("androidx.room:room-runtime:2.3.0")
-    kapt ("androidx.room:room-compiler:2.3.0")
+    implementation ("androidx.room:room-rxjava3:2.6.1")
+    implementation ("androidx.room:room-runtime:2.6.1")
+    ksp ("androidx.room:room-compiler:2.6.1")
 
     // Rx Java
     implementation ("io.reactivex.rxjava3:rxandroid:3.0.0")

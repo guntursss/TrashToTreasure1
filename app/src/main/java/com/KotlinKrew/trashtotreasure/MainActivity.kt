@@ -9,7 +9,7 @@ import android.widget.EditText
 import android.widget.Toast
 var textInput: EditText = TODO()
 
-public class MainActivity : AppCompatActivity() {
+ class MainActivity : AppCompatActivity() {
     private lateinit var TombolPindah: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
