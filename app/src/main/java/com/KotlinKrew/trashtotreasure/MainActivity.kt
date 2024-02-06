@@ -20,7 +20,7 @@ public class MainActivity : AppCompatActivity() {
         TombolPindah.setOnClickListener {
             TombolPindah.setOnClickListener {
                 if (TextUtils.isEmpty(textInput.text)) {
-                    Toast.makeText(this, "Harta tidak boleh kosong", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Nama tidak boleh kosong", Toast.LENGTH_LONG).show()
                 } else {
                     val pindah = Intent(this, HomeActivity::class.java)
                     startActivity(pindah)
