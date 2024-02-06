@@ -17,7 +17,6 @@ var textInput: EditText = TODO()
         setContentView(R.layout.activity_home)
         TombolPindah = findViewById(R.id.btn_login)
         textInput = findViewById(R.id.et_input_text)
-        TombolPindah.setOnClickListener {
             TombolPindah.setOnClickListener {
                 if (TextUtils.isEmpty(textInput.text)) {
                     Toast.makeText(this, "Nama tidak boleh kosong", Toast.LENGTH_LONG).show()
@@ -28,4 +27,3 @@ var textInput: EditText = TODO()
             }
         }
     }
-}
